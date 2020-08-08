@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito&display=swap" rel="stylesheet">
+        <title>New Patient Application Form</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <h1 id="title">MD MEDICAL CENTER</h1>
+                <p id="description">Healing hands, caring hearts.</p>
+            </header>
+            <div id="container"> 
+                <form id="survey-form" action="" required>
+                    <h2>NEW PATIENT APPLICATION FORM</h2>
+                    <div id="personal-information">
+                        <h3>Personal Information</h3>
+                        <div id="name-grid">
+                            <label class="name-class" id="name-label" for="name">
+                                First Name <input class="input-size" id="name" type="text" placeholder="Enter Your First Name">
+                            </label>
+
+                            <label class="name-class" id="mname-label" for="mname">
+                                Middle Name <input class="input-size" id="mname" type="text" placeholder="Enter Your Middle Initial">
+                            </label>
+
+                            <label class="name-class" id="lname-label" for="lname">
+                                Last Name <input class="input-size" id="lname" type="text" placeholder="Enter Your Last Name">
+                            </label>
+                        </div>
+                        <div id="age-sex-birthday-grid">
+                            <label class="age-sex-birthday" id="number-label" for="number">
+                                Age <input class="input-size" id="number" type="number" min="0" max="150" placeholder="Enter Your Age"> 
+                            </label>
+                            <label  class="age-sex-birthday" id="sex-label" for="sex">
+                                Sex 
+                                <select name="" id="sex">
+                                    <option value="none" selected disabled hidden> 
+                                        Select 
+                                    </option> 
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </label>
+                            
+
+                            <label  class="age-sex-birthday" id="birthday-label" for="birthday">
+                                Birthday <input class="input-size" type="date" id="birthday">
+                            </label>
+                            
+                        </div>
+
+                        <div id="status-height-weight-grid">
+                            <label class="status-height-weight" for="dropdown">
+                                Marital Status
+                                <select name="marital-status" id="dropdown">
+                                    <option value="none" selected disabled hidden> 
+                                        Select 
+                                    </option> 
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                    <option value="widowed">Widowed</option>
+                                    <option value="divorced">Divorced</option>
+                                    <option value="separated">Separated</option>
+                                </select>
+                            </label>
+
+                            <label class="status-height-weight" id="height-label" for="height" >
+                                Height(cm)
+                                <input class="input-size" type="number" id="height" step="0.01" placeholder="Enter Your Height in cm">
+                            </label>
+
+                            <label class="status-height-weight" id="weight-label" for="weight">
+                                Weight(Kg)
+                                <input class="input-size" type="number" id="weight" step="0.01" placeholder="Enter Your Weight in Kg">
+                            </label>
+                        </div>
+
+                    </div>
+
+                    
+                    
+                    <div id="contact-info">
+                        <h3>Contact Information</h3>
+
+                        <label class="cont-info" for="address">
+                            Address
+                            <input class="input-size" type="text" id="address" placeholder="Enter Your Address">
+                        </label>
+                        <div id="number-email">
+                            <label class="cont-info" id="label-contact-number" for="contact-number">
+                                Contact Number
+                                <input class="input-size" type="tel" name="" id="contact-number" placeholder="Enter Your Contact Number">
+                            </label>
+
+                            <label class="cont-info" id="email-label" for="email">
+                                Email
+                                <input class="input-size" id="email" type="email" placeholder="Enter Your Email Address"> 
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div id="in-case-of-emergency">
+                        <h3>In Case Of Emergency</h3>
+
+                        <label class="emergency" for="emergency-contact">
+                            Emergency Contact Person
+                            <input class="input-size" type="text" id="emergency-contact" placeholder="Enter Emergency Contact Person">
+                        </label>
+                        
+                        <div id="number-relationship">
+                            <label class="emergency" for="emergency-contact-number">
+                                Contact Number
+                                <input class="input-size" type="tel" id="emergency-contact-number" placeholder="Enter Contact Number">
+                            </label>
+
+                            <label class="emergency" for="relationship">
+                                Relationship
+                                <input class="input-size" type="text" id="relationship" placeholder="Enter Your Relationship"> 
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <h3>Health Status</h3>
+
+                    <fieldset id="health-problem">
+                        <legend>Current Health Problem/s: (please check all that apply)</legend>
+
+                        <div id="hp-grid">
+                            <label for="hp1">
+                                <input type="checkbox" id="hp1" value="anxiety"> Anxiety
+                            </label>
+                            
+                            <label for="hp2">
+                                <input type="checkbox" id="hp2" value="asthma">
+                                Asthma
+                            </label>
+                        
+                            <label for="hp3">
+                                <input type="checkbox" id="hp3" value="athletic-injury">
+                                Athletic Injury
+                            </label>
+                            
+                            <label for="hp4">
+                                <input type="checkbox" id="hp4" value="bleeding-disorder">
+                                Bleeding Disorder
+                            </label>
+                            
+                            <label for="hp5">
+                                <input type="checkbox" id="hp5" value="cardiac-problem">
+                                Cardiac Problem
+                            </label>
+                            
+                            <label for="hp6">
+                                <input type="checkbox" id="hp6" value="dental-problem">
+                                Dental Problem
+                            </label>
+                            
+                            <label for="hp7">
+                                <input type="checkbox" id="hp7" value="depression">
+                                Depression
+                            </label>
+                            
+                            <label for="hp8">
+                                <input type="checkbox" id="hp8" value="diabetes">
+                                Diabetes
+                            </label>
+                            
+                            <label for="hp9">
+                                <input type="checkbox" id="hp9" value="hearing-problem">
+                                Hearing Problem
+                            </label>
+                            
+                            <label for="hp10">
+                                <input type="checkbox" id="hp10" value="headache">
+                                Headache
+                            </label>
+                            
+                            <label for="hp11">
+                                <input type="checkbox" id="hp11" value="liver-or-kidney-problem">
+                                Liver or Kidney Problem
+                            </label>
+                            
+                            <label for="hp12">
+                                <input type="checkbox" id="hp12" value="migraines">
+                                Migraines
+                            </label>
+                            
+                            <label for="hp13">
+                                <input type="checkbox" id="hp13" value="musculoskeletal-problem">
+                                Musculoskeletal Problem
+                            </label>
+                            
+                            <label for="hp14">
+                                <input type="checkbox" id="hp14" value="neurological-problem">
+                                Neurological Problem
+                            </label>
+                            
+                            <label for="hp15">
+                                <input type="checkbox" id="hp15" value="respiratory-problem">
+                                Respiratory Problem
+                            </label>
+                            
+                            <label for="hp16">
+                                <input type="checkbox" id="hp16" value="skin-problem">
+                                Skin Problem
+                            </label>
+                            
+                            <label for="hp17">
+                                <input type="checkbox" id="hp17" value="speech-problem">
+                                Speech Problem
+                            </label>
+                            
+                            <label for="hp18">
+                                <input type="checkbox" id="hp18" value="vision-problem">
+                                Vision Problem
+                            </label>
+                        </div>
+
+                        <label for="hp-others">Other/s: (please specify)</label>
+                        <input class="text-area" id="hp-others" type="textarea">   
+                    </fieldset>
+
+
+                    <fieldset id="medication">
+                        <legend>Taking any medications, currently</legend>
+                        <div id="medication-radio">
+                            <input type="radio" name="mstatus" id="med-yes" value="m-yes">
+                            <label for="med-yes">Yes</label>
+                        
+                            <input type="radio" name="mstatus" id="med-no" value="m-no">
+                            <label for="med-no">No</label>    
+                        </div>
+
+                        <label id="med-others-label" for="med-others">
+                            If yes, please list it here 
+                            <input class="text-area" type="textarea" name="m-others" id="med-others">
+                        </label>
+                        
+                    </fieldset>
+
+                    <input id="submit-button" type="submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
